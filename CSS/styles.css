@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+
+/* Use the custom font in your CSS */
+
+body {
+  background-color: #F6D050;
+}
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.centered{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+/*Fonts*/
+.bold{
+  font-weight: bold;
+}
+.extra-bold{
+  font-weight:900;
+}
+.gray{
+  color: #222;
+}
+.light-gray{
+  color: #666;
+}
+/*start here*/
+section,article{
+  display: flex;
+  flex-direction: column;
+}
+section{
+background-color: #fff;
+width: 375px;
+border: 1px solid #000200;
+border-radius: 15px;
+box-shadow: 8px 8px  #000200;
+padding: 20px;
+gap: 20px;
+}
+@media (max-width:600px) {
+  section{
+    width: 300px;
+  }
+}
+section > img{
+  width:100% ;
+  border-radius: 10px;
+}
+article{
+  gap: 15px;
+}
+article p{
+  font-size: 0.9em; 
+}
+h3{
+  font-size: 1.3em;
+}
+@media (max-width:600px) {
+  article p{
+    font-size: 0.75em; 
+  }
+  h3{
+    font-size: 1.1em;
+  }
+}
+p.category{
+  background-color: #F6D050;
+  width: fit-content;
+  padding: 10px;
+  font-weight: bolder;
+}
+/* author */
+.author{
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  gap: 15px;
+}
+.author img{
+  width: 40px;
+}
